@@ -57,12 +57,12 @@ const archiveItems = [
   {
     id: "arc-06",
     category: "campaign",
-    title: "WET CONCRETE REFLECTIONS // LOOK 02",
-    medium: "Medium format digital with cine lens",
-    date: "FEBRUARY 2024",
+    title: "DEFAULT BRAND MUSE // 'YOU CAN'T REACH ME'",
+    medium: "35mm architectural portrait — Concrete Pavilion",
+    date: "SS24 CAMPAIGN",
     src: "assets/images/campaign_model_2.jpg",
-    details: "Female model wearing oversized washed graphic tee with relaxed tailored trousers in industrial warehouse studio.",
-    location: "Tokyo Studio Shinjuku"
+    details: "Official default brand model for the Noir Culture Society female category. Curvy silhouette captured against monumental brutalist concrete.",
+    location: "Concrete Monolith Pavilion"
   },
   {
     id: "arc-07",
@@ -87,12 +87,12 @@ const archiveItems = [
   {
     id: "arc-09",
     category: "campaign",
-    title: "REBEL YOUTH // MONOLITHIC SHADOW",
-    medium: "35mm grain editorial portrait",
-    date: "MARCH 2024",
+    title: "MUSE PORTRAIT // ARCHITECTURAL DRAPE",
+    medium: "35mm medium close-up editorial portrait",
+    date: "SS24 CAMPAIGN",
     src: "assets/images/campaign_model_3.jpg",
-    details: "Editorial model leaning against raw industrial concrete under dramatic natural skylight.",
-    location: "Industrial District"
+    details: "Signature female muse portrait study highlighting the drape, neckline, and rebellious attitude of the atelier collection.",
+    location: "Brutalist Archive Pavilion"
   },
   {
     id: "arc-10",

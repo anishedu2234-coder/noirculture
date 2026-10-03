@@ -145,14 +145,16 @@ noirculture/
 │   ├── audio/
 │   │   └── masterpiece_satie.mp3    # Gymnopédie No. 1 Master Recording (7.5 MB)
 │   └── images/
+│       ├── output-image.jpeg        # Original master muse photograph
+│       ├── default_female_model_noir.jpg # Color-graded signature muse portrait
 │       ├── hero_campaign.jpg        # Hero full-bleed campaign photography
 │       ├── falling_art.jpg          # 'I'm Falling Again' master artwork
 │       ├── falling_model.jpg        # Brutalist pavilion lookbook
 │       ├── anxious_art.jpg          # 'Anxious Paradise' vintage wash flat lay
 │       ├── romantic_art.jpg         # 'Romantic Nihilism' marble & rose
 │       ├── echoes_art.jpg           # 'Echoes in the Concrete' 3:45 AM
-│       ├── campaign_model_2.jpg     # Concrete studio wet reflections
-│       ├── campaign_model_3.jpg     # Rebel Youth industrial lookbook
+│       ├── campaign_model_2.jpg     # Official default muse in concrete pavilion
+│       ├── campaign_model_3.jpg     # Official muse close-up portrait
 │       ├── archive_sketch.jpg       # Raw ink and calligraphy sketchbook
 │       └── studio_archive.jpg       # Art director workbench & Pantone chips
 ├── css/
