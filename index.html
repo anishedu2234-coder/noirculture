@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOIR CULTURE SOCIETY — Contemporary Streetwear & Visual Storytelling</title>
+  <meta name="description" content="Independent contemporary streetwear label combining emotional storytelling, surreal imagery, dark humor, and cinematic illustrations on heavyweight silhouettes.">
+  
+  <!-- Favicon / Meta -->
+  <meta name="theme-color" content="#070708">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- Procedural Film Grain Overlay -->
+  <div class="film-grain-overlay" aria-hidden="true"></div>
+  <div class="vignette-overlay" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       STICKY MINIMAL NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" id="brandLogo">
+        <span class="brand-name">NOIR CULTURE SOCIETY</span>
+        <span class="brand-sub">STUDIO & ATELIER // SS24</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#collection" class="nav-link" id="navCollection">COLLECTION</a>
+        <a href="#campaigns" class="nav-link" id="navCampaigns">CAMPAIGNS</a>
+        <a href="#stories" class="nav-link" id="navStories">STORIES</a>
+        <a href="#archive" class="nav-link" id="navArchive">ARCHIVE</a>
+        <a href="#about" class="nav-link" id="navAbout">ABOUT</a>
+        <a href="#contact" class="nav-link" id="navContact">CONTACT</a>
+      </nav>
+
+      <div class="nav-controls">
+        <button class="sound-toggle-btn" id="soundToggleBtn" title="Toggle Atmospheric Studio Soundscape" aria-label="Toggle Sound">
+          <div class="sound-bars" aria-hidden="true">
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+          </div>
+          <span class="sound-label mono">SOUND: OFF</span>
+        </button>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Mobile Menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <button class="mobile-drawer-close" id="mobileDrawerClose">CLOSE [X]</button>
+    <div class="mobile-nav-links">
+      <a href="#collection" class="nav-link">COLLECTION</a>
+      <a href="#campaigns" class="nav-link">CAMPAIGNS</a>
+      <a href="#stories" class="nav-link">DESIGN STORIES</a>
+      <a href="#archive" class="nav-link">VISUAL ARCHIVE</a>
+      <a href="#about" class="nav-link">ABOUT LABEL</a>
+      <a href="#contact" class="nav-link">CONTACT & INQUIRY</a>
+    </div>
+    <div class="mobile-drawer-meta">
+      <span class="mono" style="color: var(--accent-cream);">NOIR CULTURE SOCIETY</span>
+      <span class="mono" style="color: var(--text-dim);">LONDON // TOKYO // PARIS</span>
+      <span class="mono" style="color: var(--text-dim);">280 GSM HEAVYWEIGHT SILHOUETTES</span>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         Large full-screen cinematic campaign image, clean and impactful
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-background-wrap">
+        <img src="assets/images/hero_campaign.jpg" alt="NOIR CULTURE SOCIETY Campaign Editorial Model" class="hero-background-img" id="heroCampaignImg">
+        <div class="hero-gradient-overlay"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-top-meta">
+          <span class="hero-meta-item">COLLECTION 01 // AUTUMN-WINTER</span>
+          <span class="hero-meta-item">EDITION NUMBERED 01–250</span>
+          <span class="hero-meta-item">LONDON · TOKYO</span>
+        </div>
+
+        <div class="hero-headline-wrap">
+          <h1 class="hero-headline">WEAR THE STORY.</h1>
+        </div>
+
+        <p class="hero-subheading">
+          Cinematic ideas. Strange feelings. Everyday silhouettes.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#collection" class="btn btn-primary btn-sharp" id="heroPrimaryCta">
+            <span>EXPLORE THE COLLECTION</span>
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+          <button class="btn btn-secondary btn-sharp" id="heroSecondaryCta" data-open-case-study="falling">
+            <span>VIEW THE WORK</span>
+            <span class="btn-arrow" aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <span class="mono" style="writing-mode: vertical-rl; transform: rotate(180deg); color: var(--text-dim); font-size: 0.65rem;">SCROLL</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTRODUCTION SECTION
+         Editorial statement & Brand Philosophy
+         ========================================================================== -->
+    <section class="section intro-section" id="intro">
+      <div class="container">
+        <div class="section-meta-header">
+          <div class="section-label">
+            <span class="status-dot"></span>
+            <span class="section-tag">MANIFESTO // 001</span>
+          </div>
+          <div class="section-annotation">CONTEMPORARY ATELIER</div>
+        </div>
+
+        <div class="intro-quote-wrap reveal-on-scroll">
+          <blockquote class="intro-quote">
+            “Not every feeling needs an explanation. <br>
+            <span class="highlight-teal">Some of them deserve a graphic.”</span>
+          </blockquote>
+        </div>
+
+        <div class="intro-grid">
+          <div class="intro-description reveal-on-scroll">
+            <p style="margin-bottom: 1.5rem;">
+              <strong>NOIR CULTURE SOCIETY</strong> is a creative streetwear label built around visual storytelling, emotion, irony, and unconventional ideas. We exist at the intersection where independent contemporary fashion meets an art-direction atelier.
+            </p>
+            <p>
+              Rather than printing disposable surface-level logos, every piece we produce begins as a private essay, an architectural sketch, or a dark psychological reflection — converted into heavy, wearable physical artifacts designed to outlive ephemeral digital trends.
+            </p>
+          </div>
+
+          <div class="intro-pillars reveal-on-scroll">
+            <div class="pillar-item">
+              <span class="pillar-num">01 / TACTILE CHRONICLE</span>
+              <h3 class="pillar-title">Custom Heavyweight Blanks</h3>
+              <p class="pillar-text">Bespoke 280–320 GSM organic combed cotton, knitted with dense gauge threads to deliver a sculptural drop-shoulder drape that softens beautifully with age.</p>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-num">02 / MANUAL IMPRINT</span>
+              <h3 class="pillar-title">Screenprinted Narratives</h3>
+              <p class="pillar-text">Hand-pulled water-based discharge and matte plastisol inks. High-density textures and subtle halftone screens that fuse into the garment fiber rather than sitting like plastic.</p>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-num">03 / LIMITED EDITIONS</span>
+              <h3 class="pillar-title">Strict Finite Runs</h3>
+              <p class="pillar-text">Every run is strictly numbered and limited to 250 units worldwide. No restocks, no overproduction, no compromises on creative integrity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         COLLECTION SECTION (CURATED ART EXHIBITION GRID)
+         Editorial grid showcasing designs with multiple view modes
+         ========================================================================== -->
+    <section class="section collection-section" id="collection">
+      <div class="container">
+        <div class="section-meta-header">
+          <div class="section-title-wrap">
+            <span class="section-tag">CURATED EXHIBITION // COLLECTION 01</span>
+            <h2 class="section-title">THE COLLECTION</h2>
+          </div>
+          <div class="section-annotation">6 DESIGNS // AUTUMN EDITION</div>
+        </div>
+
+        <!-- Toolbar for Switching Views -->
+        <div class="collection-toolbar">
+          <div class="view-toggle-group" role="group" aria-label="Visual Perspective Mode">
+            <button class="view-toggle-btn is-active" data-mode="artwork" id="modeBtnArtwork">ARTWORK PREVIEW</button>
+            <button class="view-toggle-btn" data-mode="mockup" id="modeBtnMockup">T-SHIRT MOCKUP</button>
+            <button class="view-toggle-btn" data-mode="campaign" id="modeBtnCampaign">CAMPAIGN LOOK</button>
+          </div>
+          <div class="collection-count-badge">
+            <span style="color: var(--accent-cream);">EXHIBITION FORMAT</span> : CURATED GALLERY
+          </div>
+        </div>
+
+        <!-- Featured Design: I'M FALLING AGAIN -->
+        <article class="featured-exhibition-card reveal-on-scroll" id="featuredDesignCard">
+          <div class="featured-visual-stage">
+            <span class="visual-mode-badge" id="featuredModeBadge">VIEW: SCREENPRINT ARTWORK</span>
+            <img src="assets/images/falling_art.jpg" alt="I'M FALLING AGAIN Artwork T-Shirt" id="featuredStageImg">
+            <button class="visual-inspect-btn" data-open-case-study="falling" data-chapter="artwork" aria-label="Inspect High-Res Artwork">
+              <span>INSPECT ARTWORK</span>
+              <span>[+]</span>
+            </button>
+          </div>
+
+          <div class="featured-info-col">
+            <div class="featured-top-details">
+              <div class="featured-header-row">
+                <span class="featured-edition-tag">FEATURED PIECE // 01</span>
+                <span class="featured-price-tag">EDITION OF 250 // SS24</span>
+              </div>
+              <h3 class="featured-title">I’M FALLING AGAIN</h3>
+              <p class="featured-concept-quote">
+                “A visual metaphor for repeating the things we promised ourselves we wouldn't.”
+              </p>
+              <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-muted);">
+                An inverted figure suspended in brutalist geometry and wilting flora. Exploring human cyclical habits through post-punk halftone screenprinting and desaturated teal accents on heavyweight mineral washed cotton.
+              </p>
+
+              <div class="featured-spec-list">
+                <div class="spec-item">
+                  <span class="spec-label">FABRIC WEIGHT</span>
+                  <span class="spec-value">280 GSM French Terry</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">PRINTING METHOD</span>
+                  <span class="spec-value">4-Pass Hand Screenprint</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">COLOR PALETTE</span>
+                  <span class="spec-value">Raven / Off-White / Muted Teal</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">SILHOUETTE</span>
+                  <span class="spec-value">Boxy Drop-Shoulder Relaxed</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="featured-actions-row">
+              <button class="btn btn-primary btn-sharp" data-open-case-study="falling" data-chapter="concept">
+                <span>OPEN FULL CASE STUDY</span>
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </button>
+              <button class="btn btn-secondary btn-sharp" data-open-case-study="falling" data-chapter="onbody">
+                <span>GARMENT SPECS</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Editorial Grid: 5 Complementary Artworks -->
+        <div class="collection-grid">
+          <!-- Card 2: Anxious Paradise -->
+          <article class="exhibition-card reveal-on-scroll" data-open-case-study="anxious">
+            <div class="card-image-wrap">
+              <img src="assets/images/anxious_art.jpg" alt="ANXIOUS PARADISE Streetwear T-shirt" loading="lazy">
+              <span class="card-stamp">02 // SS24</span>
+              <div class="card-hover-overlay">
+                <span class="btn btn-primary btn-sharp" style="padding: 0.75rem 1.4rem; font-size: 0.65rem;">VIEW CASE STUDY →</span>
+              </div>
+            </div>
+            <div class="card-info">
+              <div>
+                <h3 class="card-title">ANXIOUS PARADISE</h3>
+                <p class="card-description">
+                  “Sunsets seen through the lens of impending doom and blissful dissociation.”
+                </p>
+              </div>
+              <div class="card-footer">
+                <span>290 GSM VINTAGE WASH</span>
+                <span class="card-explore-link">EXPLORE →</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Romantic Nihilism -->
+          <article class="exhibition-card reveal-on-scroll" data-open-case-study="romantic">
+            <div class="card-image-wrap">
+              <img src="assets/images/romantic_art.jpg" alt="ROMANTIC NIHILISM Streetwear T-shirt" loading="lazy">
+              <span class="card-stamp">03 // SS24</span>
+              <div class="card-hover-overlay">
+                <span class="btn btn-primary btn-sharp" style="padding: 0.75rem 1.4rem; font-size: 0.65rem;">VIEW CASE STUDY →</span>
+              </div>
+            </div>
+            <div class="card-info">
+              <div>
+                <h3 class="card-title">ROMANTIC NIHILISM</h3>
+                <p class="card-description">
+                  “Cynicism draped in velvet roses, shattered classical marble, and vintage serif typography.”
+                </p>
+              </div>
+              <div class="card-footer">
+                <span>300 GSM COMBED COTTON</span>
+                <span class="card-explore-link">EXPLORE →</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Echoes In The Concrete -->
+          <article class="exhibition-card reveal-on-scroll" data-open-case-study="falling">
+            <div class="card-image-wrap">
+              <img src="assets/images/echoes_art.jpg" alt="ECHOES IN THE CONCRETE Streetwear T-shirt" loading="lazy">
+              <span class="card-stamp">04 // SS24</span>
+              <div class="card-hover-overlay">
+                <span class="btn btn-primary btn-sharp" style="padding: 0.75rem 1.4rem; font-size: 0.65rem;">VIEW CASE STUDY →</span>
+              </div>
+            </div>
+            <div class="card-info">
+              <div>
+                <h3 class="card-title">ECHOES IN CONCRETE</h3>
+                <p class="card-description">
+                  “Brutalist memories and wireframe human anatomy echoing in empty metro stations at 3:45 AM.”
+                </p>
+              </div>
+              <div class="card-footer">
+                <span>280 GSM MINERAL BLACK</span>
+                <span class="card-explore-link">EXPLORE →</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Submersive Illusions (Campaign On-Body) -->
+          <article class="exhibition-card reveal-on-scroll" data-open-case-study="anxious">
+            <div class="card-image-wrap">
+              <img src="assets/images/campaign_model_2.jpg" alt="SUBMERSIVE ILLUSIONS Campaign Look" loading="lazy">
+              <span class="card-stamp">05 // CAMPAIGN LOOK</span>
+              <div class="card-hover-overlay">
+                <span class="btn btn-primary btn-sharp" style="padding: 0.75rem 1.4rem; font-size: 0.65rem;">VIEW CASE STUDY →</span>
+              </div>
+            </div>
+            <div class="card-info">
+              <div>
+                <h3 class="card-title">SUBMERSIVE ILLUSIONS</h3>
+                <p class="card-description">
+                  “Surreal critique on digital worship, dream states, and manufactured reality in Tokyo.”
+                </p>
+              </div>
+              <div class="card-footer">
+                <span>WIDE TAILORED TROUSER PAIRING</span>
+                <span class="card-explore-link">EXPLORE →</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Rebel Youth / Monolith -->
+          <article class="exhibition-card reveal-on-scroll" data-open-case-study="romantic">
+            <div class="card-image-wrap">
+              <img src="assets/images/campaign_model_3.jpg" alt="REBEL YOUTH Monolith Look" loading="lazy">
+              <span class="card-stamp">06 // CAMPAIGN LOOK</span>
+              <div class="card-hover-overlay">
+                <span class="btn btn-primary btn-sharp" style="padding: 0.75rem 1.4rem; font-size: 0.65rem;">VIEW CASE STUDY →</span>
+              </div>
+            </div>
+            <div class="card-info">
+              <div>
+                <h3 class="card-title">REBEL YOUTH // MONOLITH</h3>
+                <p class="card-description">
+                  “Dark humor and quiet defiance for the overstimulated mind navigating digital burnout.”
+                </p>
+              </div>
+              <div class="card-footer">
+                <span>HEAVYWEIGHT PLEATED PAIRING</span>
+                <span class="card-explore-link">EXPLORE →</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CAMPAIGN SECTION (FULL-WIDTH CINEMATIC LOOKBOOK)
+         Diverse adult fashion models wearing oversized heavyweight tees & trousers
+         ========================================================================== -->
+    <section class="section campaign-section" id="campaigns">
+      <div class="container">
+        <div class="lookbook-strip-header">
+          <div class="campaign-statement-block">
+            <span class="section-tag">CINEMATIC CHRONICLES // 35MM</span>
+            <h2 class="campaign-statement-title">THE HUMAN CONDITION</h2>
+            <p class="campaign-statement-p">
+              Visual stories for everyday wear. Diverse silhouettes captured against raw brutalist architecture, industrial stairwells, and surreal nocturnal shadows.
+            </p>
+          </div>
+          <div class="campaign-nav-arrows">
+            <button class="lookbook-arrow-btn" id="lookbookPrev" aria-label="Previous Slide">←</button>
+            <button class="lookbook-arrow-btn" id="lookbookNext" aria-label="Next Slide">→</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Horizontal Editorial Reel -->
+      <div class="lookbook-viewport" id="lookbookViewport">
+        <div class="lookbook-track">
+          <!-- Slide 1 -->
+          <div class="lookbook-slide">
+            <div class="slide-media-wrap">
+              <img src="assets/images/hero_campaign.jpg" alt="Campaign Look 01 - Concrete Monolith" loading="lazy">
+              <span class="slide-film-stamp">FRAME 01 // 35MM ISO 800</span>
+            </div>
+            <div class="slide-content-bar">
+              <div>
+                <div class="slide-meta-label">COLLECTION 01 // DROP 01</div>
+                <h3 class="slide-headline">SECTOR 7 MONOLITH</h3>
+              </div>
+              <div class="slide-coordinates">
+                <span>51.5074° N, 0.1278° W</span><br>
+                <span>OVERSIZED BOXY TEE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="lookbook-slide">
+            <div class="slide-media-wrap">
+              <img src="assets/images/falling_model.jpg" alt="Campaign Look 02 - Concrete Pavilion" loading="lazy">
+              <span class="slide-film-stamp">FRAME 02 // TRI-X 400</span>
+            </div>
+            <div class="slide-content-bar">
+              <div>
+                <div class="slide-meta-label">THE HUMAN CONDITION</div>
+                <h3 class="slide-headline">I'M FALLING AGAIN</h3>
+              </div>
+              <div class="slide-coordinates">
+                <span>52.5200° N, 13.4050° E</span><br>
+                <span>RELAXED CARGO TROUSER</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="lookbook-slide">
+            <div class="slide-media-wrap">
+              <img src="assets/images/campaign_model_2.jpg" alt="Campaign Look 03 - Studio Shinjuku" loading="lazy">
+              <span class="slide-film-stamp">FRAME 03 // CINE LENS</span>
+            </div>
+            <div class="slide-content-bar">
+              <div>
+                <div class="slide-meta-label">VISUAL STORIES FOR WEAR</div>
+                <h3 class="slide-headline">SUBMERSIVE ILLUSIONS</h3>
+              </div>
+              <div class="slide-coordinates">
+                <span>35.6762° N, 139.6503° E</span><br>
+                <span>WIDE PLEATED CHARCOAL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="lookbook-slide">
+            <div class="slide-media-wrap">
+              <img src="assets/images/campaign_model_3.jpg" alt="Campaign Look 04 - Rebel Youth" loading="lazy">
+              <span class="slide-film-stamp">FRAME 04 // 35MM ISO 1600</span>
+            </div>
+            <div class="slide-content-bar">
+              <div>
+                <div class="slide-meta-label">COLLECTION 01 // PERSPECTIVE</div>
+                <h3 class="slide-headline">REBEL YOUTH ARCHITECTURE</h3>
+              </div>
+              <div class="slide-coordinates">
+                <span>48.8566° N, 2.3522° E</span><br>
+                <span>TUCKED BOXY HEAVYWEIGHT</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="lookbook-slide">
+            <div class="slide-media-wrap">
+              <img src="assets/images/studio_archive.jpg" alt="Campaign Look 05 - Studio Atelier" loading="lazy">
+              <span class="slide-film-stamp">FRAME 05 // ATELIER TABLE</span>
+            </div>
+            <div class="slide-content-bar">
+              <div>
+                <div class="slide-meta-label">BEHIND THE PROCESS</div>
+                <h3 class="slide-headline">THE WORKBENCH & CHIPS</h3>
+              </div>
+              <div class="slide-coordinates">
+                <span>DESIGN LAB // 04</span><br>
+                <span>PANTONE FORMULATIONS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         DESIGN STORIES SECTION
+         Individual case studies: 01 Concept / 02 Visual Direction / 03 Artwork / 04 On-Body / 05 Campaign
+         ========================================================================== -->
+    <section class="section stories-section" id="stories">
+      <div class="container">
+        <div class="section-meta-header">
+          <div class="section-title-wrap">
+            <span class="section-tag">CASE STUDY EDITORIAL // CHAPTERS</span>
+            <h2 class="section-title">DESIGN STORIES</h2>
+          </div>
+          <div class="section-annotation">DEEP-DIVE PROCESS</div>
+        </div>
+
+        <div class="stories-intro-card reveal-on-scroll">
+          <div>
+            <span class="case-study-badge">FEATURED ARCHIVE ANALYSIS</span>
+            <h3 class="case-study-h2">I’M FALLING AGAIN</h3>
+            <p class="case-study-lead">
+              A breakdown of the five distinct phases required to turn an intimate psychological contradiction into an oversized luxury streetwear staple.
+            </p>
+            <button class="btn btn-primary btn-sharp" data-open-case-study="falling" data-chapter="concept">
+              <span>LAUNCH CASE STUDY READER</span>
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </button>
+          </div>
+
+          <div class="story-steps-index">
+            <button class="story-step-row" data-open-case-study="falling" data-chapter="concept">
+              <span class="step-num">01</span>
+              <div>
+                <div class="step-name">CONCEPT & METAPHOR</div>
+                <div class="step-desc">The psychological trap of cyclical self-sabotage</div>
+              </div>
+            </button>
+
+            <button class="story-step-row" data-open-case-study="falling" data-chapter="visual">
+              <span class="step-num">02</span>
+              <div>
+                <div class="step-name">VISUAL DIRECTION</div>
+                <div class="step-desc">Brutalist gridlines colliding with organic freefall</div>
+              </div>
+            </button>
+
+            <button class="story-step-row" data-open-case-study="falling" data-chapter="artwork">
+              <span class="step-num">03</span>
+              <div>
+                <div class="step-name">SCREENPRINT ARTWORK</div>
+                <div class="step-desc">4-color separation & halftone dot structure</div>
+              </div>
+            </button>
+
+            <button class="story-step-row" data-open-case-study="falling" data-chapter="onbody">
+              <span class="step-num">04</span>
+              <div>
+                <div class="step-name">ON-BODY ARCHITECTURE</div>
+                <div class="step-desc">280 GSM custom blank, drop-shoulder & collar rib</div>
+              </div>
+            </button>
+
+            <button class="story-step-row" data-open-case-study="falling" data-chapter="campaign">
+              <span class="step-num">05</span>
+              <div>
+                <div class="step-name">CAMPAIGN LOOKBOOK</div>
+                <div class="step-desc">35mm photography in brutalist concrete environments</div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT SECTION
+         “MORE THAN A GRAPHIC.”
+         ========================================================================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-editorial-wrap">
+          <div class="about-media-box reveal-on-scroll">
+            <img src="assets/images/studio_archive.jpg" alt="NOIR CULTURE SOCIETY Studio Workspace">
+            <div class="about-caption-bar">
+              <span>ATELIER DESK // EXPERIMENTS IN TEXTURE</span>
+              <span>LONDON · TOKYO</span>
+            </div>
+          </div>
+
+          <div class="about-text-content reveal-on-scroll">
+            <span class="section-tag" style="margin-bottom: 1rem; display: block;">CREATIVE PHILOSOPHY</span>
+            <h2 class="about-headline">MORE THAN A GRAPHIC.</h2>
+            
+            <p class="about-manifesto-text">
+              “NOIR CULTURE SOCIETY explores the space between fashion, illustration and emotion. Each piece begins with an idea — a feeling, a contradiction, a strange thought — and turns it into something you can wear.”
+            </p>
+
+            <p class="about-extended-text">
+              We reject the soulless algorithmic churn of modern apparel. Our garments are deliberately unhurried: drawn by hand, typeset with bespoke typographic character, and screenprinted onto heavyweight custom textiles that stand up to daily life while honoring the weight of the ideas behind them.
+            </p>
+
+            <div class="about-specs-row">
+              <div>
+                <div class="about-stat-number">280+</div>
+                <div class="about-stat-label">GSM Heavyweight Blank</div>
+              </div>
+              <div>
+                <div class="about-stat-number">250</div>
+                <div class="about-stat-label">Numbered Editions Only</div>
+              </div>
+              <div>
+                <div class="about-stat-number">100%</div>
+                <div class="about-stat-label">Organic Combed Cotton</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         VISUAL ARCHIVE SECTION
+         Designer's private visual archive: sketches, typography, graphics, studies
+         ========================================================================== -->
+    <section class="section archive-section" id="archive">
+      <div class="container">
+        <div class="section-meta-header">
+          <div class="section-title-wrap">
+            <span class="section-tag">ATELIER VAULT // UNRELEASED & PHYSICAL</span>
+            <h2 class="section-title">VISUAL ARCHIVE</h2>
+          </div>
+          <div class="section-annotation">CLICK TO INSPECT METADATA</div>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="archive-filters-bar">
+          <button class="archive-filter-btn is-active" data-filter="all">ALL ENTRIES (10)</button>
+          <button class="archive-filter-btn" data-filter="sketches">SKETCHES & INK</button>
+          <button class="archive-filter-btn" data-filter="graphics">T-SHIRT GRAPHICS</button>
+          <button class="archive-filter-btn" data-filter="campaign">CAMPAIGN PHOTOGRAPHY</button>
+          <button class="archive-filter-btn" data-filter="studies">STUDIO & COLOR STUDIES</button>
+        </div>
+
+        <!-- Grid Container -->
+        <div class="archive-grid" id="archiveGrid">
+          <!-- Populated dynamically by archive.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT & INQUIRY SECTION
+         ========================================================================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="inquiry-grid">
+          <div class="reveal-on-scroll">
+            <span class="section-tag" style="margin-bottom: 1rem; display: block;">STUDIO CORRESPONDENCE</span>
+            <h2 class="inquiry-h2">ENTER THE SOCIETY.</h2>
+            <p class="inquiry-lead">
+              For collection reservations, press features, gallery stockist inquiries, or private studio viewings in London or Tokyo, reach out below.
+            </p>
+
+            <div class="contact-channels">
+              <a href="mailto:studio@noirculturesociety.com" class="channel-link">
+                <span>STUDIO DISPATCH</span>
+                <span>studio@noirculturesociety.com →</span>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener" class="channel-link">
+                <span>INSTAGRAM ARCHIVE</span>
+                <span>@noirculturesociety →</span>
+              </a>
+              <a href="#hero" class="channel-link">
+                <span>PRIVATE LOOKBOOK PDF</span>
+                <span>REQUEST ACCESS (SS24) →</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="inquiry-form-card reveal-on-scroll">
+            <form id="inquiryForm">
+              <div class="form-group">
+                <label for="userName" class="form-label">IDENTITY / NAME</label>
+                <input type="text" id="userName" class="form-input" placeholder="e.g. Julian Vance" required>
+              </div>
+
+              <div class="form-group">
+                <label for="userEmail" class="form-label">DIGITAL COORDINATES / EMAIL</label>
+                <input type="email" id="userEmail" class="form-input" placeholder="e.g. j.vance@studio.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="userTopic" class="form-label">SUBJECT OF INQUIRY</label>
+                <input type="text" id="userTopic" class="form-input" placeholder="Collection 01 Inquiries, Press, Stockist" required>
+              </div>
+
+              <div class="form-group">
+                <label for="userMessage" class="form-label">TRANSMISSION</label>
+                <textarea id="userMessage" class="form-textarea" placeholder="Your notes, strange thoughts, or studio proposal..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-sharp" style="width: 100%;">
+                <span>TRANSMIT DISPATCH</span>
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-manifesto-brand">
+          <div class="footer-brand-title">NOIR CULTURE SOCIETY</div>
+          <p class="footer-brand-copy">
+            Independent contemporary streetwear atelier fusing emotional storytelling, surreal imagery, and heavyweight silhouettes. Made without compromise.
+          </p>
+        </div>
+
+        <div class="footer-time-clocks">
+          <div class="clock-item">
+            <span class="clock-city">LONDON</span>
+            <span class="clock-time" id="clockLondon">--:--:--</span>
+          </div>
+          <div class="clock-item">
+            <span class="clock-city">PARIS</span>
+            <span class="clock-time" id="clockParis">--:--:--</span>
+          </div>
+          <div class="clock-item">
+            <span class="clock-city">TOKYO</span>
+            <span class="clock-time" id="clockTokyo">--:--:--</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2024–2026 NOIR CULTURE SOCIETY. ALL RIGHTS RESERVED.</div>
+        <div style="display: flex; gap: 2rem; align-items: center;">
+          <button id="grainToggleBtn" class="mono" style="color: var(--text-dim); text-decoration: underline; font-size: 0.65rem;">FILM GRAIN: ON</button>
+          <span>AUTUMN / WINTER EDITION 01</span>
+          <span>LIMITED 250 PIECES</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL: DESIGN STORIES CASE STUDY
+       01 Concept / 02 Visual Direction / 03 Artwork / 04 On-Body / 05 Campaign
+       ========================================================================== -->
+  <div class="noir-modal" id="caseStudyModal" role="dialog" aria-modal="true" aria-labelledby="caseStudyModalTitle">
+    <button class="modal-close-btn" id="closeCaseStudyModal">CLOSE [ESC]</button>
+    <div class="case-study-modal-container">
+      <div style="border-bottom: 1px solid var(--border-hairline); padding-bottom: 2rem; margin-bottom: 2.5rem;">
+        <span class="mono" style="color: var(--accent-teal); font-size: 0.72rem; letter-spacing: 0.2em;" id="caseStudyModalEdition">EDITION 01 / SS24</span>
+        <h2 id="caseStudyModalTitle" style="font-size: clamp(2.5rem, 5vw, 4.2rem); text-transform: uppercase; margin: 0.5rem 0 1rem; line-height: 0.95;">I’M FALLING AGAIN</h2>
+        <p id="caseStudyModalTagline" style="font-family: var(--font-editorial); font-size: 1.35rem; font-style: italic; color: var(--accent-cream);">
+          A visual metaphor for repeating the things we promised ourselves we wouldn't.
+        </p>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <div class="case-study-nav-tabs" role="tablist">
+        <button class="case-study-tab-btn is-active" data-tab="concept">01 — CONCEPT</button>
+        <button class="case-study-tab-btn" data-tab="visual">02 — VISUAL DIRECTION</button>
+        <button class="case-study-tab-btn" data-tab="artwork">03 — ARTWORK</button>
+        <button class="case-study-tab-btn" data-tab="onbody">04 — ON-BODY</button>
+        <button class="case-study-tab-btn" data-tab="campaign">05 — CAMPAIGN</button>
+      </div>
+
+      <!-- Dynamic Content Panel -->
+      <div id="caseStudyDynamicContent">
+        <!-- Rendered by case-study.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: ARCHIVE LIGHTBOX INSPECTION
+       ========================================================================== -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+    <button class="modal-close-btn" id="closeLightboxBtn">CLOSE [ESC]</button>
+    <div class="lightbox-content-box">
+      <img src="" alt="" id="lightboxImg">
+      <div class="lightbox-caption">
+        <h3 id="lightboxTitle" style="font-family: var(--font-display); font-size: 1.4rem; color: var(--text-white); margin-bottom: 0.35rem;"></h3>
+        <div id="lightboxMedium" style="color: var(--accent-teal); margin-bottom: 0.5rem;"></div>
+        <p id="lightboxDetails" style="max-width: 600px; color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin: 0 auto 0.5rem;"></p>
+        <div id="lightboxLocation" style="color: var(--text-dim); font-size: 0.68rem;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       ATELIER SOUNDTRACK MASTERPIECE PLAYER WIDGET
+       ========================================================================== -->
+  <aside class="atelier-player-widget" id="atelierPlayerWidget" aria-label="Atelier Soundtrack Player">
+    <div class="player-header">
+      <div class="player-status-wrap">
+        <span class="status-dot"></span>
+        <span class="player-live-badge mono" id="playerTrackIndex">TRACK 01 // 02</span>
+      </div>
+      <button class="player-collapse-btn mono" id="playerWidgetToggle" aria-label="Minimize/Maximize Player">
+        [—]
+      </button>
+    </div>
+
+    <div class="player-body">
+      <div class="player-track-info">
+        <div class="player-track-artist mono" id="playerTrackArtist">ERIK SATIE // STUDIO PARIS</div>
+        <div class="player-track-title" id="playerTrackTitle">GYMNOPÉDIE NO. 1 (LENT ET DOULOUREUX)</div>
+      </div>
+    </div>
+
+    <div class="player-progress-wrap">
+      <div class="player-progress-bar" id="playerProgressBar" title="Click to seek">
+        <div class="player-progress-fill" id="playerProgressFill"></div>
+      </div>
+      <div class="player-time-row">
+        <span id="playerTimeDisplay">0:00 / 3:08</span>
+        <span class="mono" style="color: var(--accent-cream);">ATELIER MASTERPIECE</span>
+      </div>
+    </div>
+
+    <div class="player-controls-row">
+      <div class="player-playback-btns">
+        <button class="player-btn-step" id="playerPrevBtn" title="Previous Track" aria-label="Previous Track">
+          |<
+        </button>
+        <button class="player-btn-circle" id="playerPlayBtn" title="Play Masterpiece Soundtrack" aria-label="Play Soundtrack">
+          <span>▶</span>
+        </button>
+        <button class="player-btn-step" id="playerNextBtn" title="Next Track" aria-label="Next Track">
+          >|
+        </button>
+      </div>
+
+      <div class="player-vol-wrap">
+        <span class="vol-icon" aria-hidden="true">VOL</span>
+        <input type="range" class="player-vol-slider" id="playerVolSlider" min="0" max="1" step="0.05" value="0.65" title="Volume Slider" aria-label="Volume">
+      </div>
+    </div>
+  </aside>
+
+  <!-- Scripts -->
+  <script src="js/audio.js"></script>
+  <script src="js/case-study.js"></script>
+  <script src="js/archive.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+/* ==========================================================================
+   NOIR CULTURE SOCIETY — DESIGN SYSTEM & CORE FOUNDATION
+   Contemporary Streetwear Portfolio & Editorial Visual Language
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Italiana&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@500;600;700;800&display=swap');
+
+:root {
+  /* Color Foundation */
+  --bg-black: #070708;
+  --bg-deep: #0d0d0f;
+  --bg-surface: #121316;
+  --bg-elevated: #1a1b1f;
+  --bg-card: #151619;
+  
+  /* Text Colors */
+  --text-white: #f5f4f0;
+  --text-primary: #ecebe6;
+  --text-muted: #8e9096;
+  --text-dim: #5c5e64;
+  --text-dark: #2a2b2f;
+
+  /* Artwork Accents */
+  --accent-teal: #486e73;
+  --accent-teal-soft: rgba(72, 110, 115, 0.18);
+  --accent-blue: #556c80;
+  --accent-cream: #dbd1c2;
+  --accent-cream-dim: rgba(219, 209, 194, 0.12);
+  --accent-crimson: #8a3737;
+
+  /* Borders & Dividers */
+  --border-hairline: rgba(245, 244, 240, 0.07);
+  --border-subtle: rgba(245, 244, 240, 0.12);
+  --border-prominent: rgba(245, 244, 240, 0.28);
+  --border-solid: #222328;
+
+  /* Typography */
+  --font-display: 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-editorial: 'Italiana', Georgia, serif;
+  --font-mono: 'Space Mono', Menlo, Consolas, monospace;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Layout */
+  --max-width: 1540px;
+  --gutter-desktop: 4rem;
+  --gutter-tablet: 2rem;
+  --gutter-mobile: 1.25rem;
+  --nav-height: 80px;
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  --transition-smooth: 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base Reset & Document Setup */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  background-color: var(--bg-black);
+  color: var(--text-primary);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-black);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Custom Selection */
+::selection {
+  background: var(--text-white);
+  color: var(--bg-black);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-black);
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2b30;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-cream);
+}
+
+/* Film Grain Texture Canvas Overlay */
+.film-grain-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  transition: opacity 0.3s ease;
+}
+
+body.grain-disabled .film-grain-overlay {
+  display: none;
+}
+
+/* Subtle Vignette */
+.vignette-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9997;
+  background: radial-gradient(circle at center, transparent 40%, rgba(5, 5, 6, 0.75) 100%);
+}
+
+/* Typography Utilities */
+.mono {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.75rem;
+}
+
+.editorial-italic {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--text-white);
+}
+
+p {
+  color: var(--text-muted);
+  font-weight: 300;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  user-select: none;
+}
+
+/* Container Structure */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter-desktop);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 var(--gutter-tablet);
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 var(--gutter-mobile);
+  }
+}
+
+/* Section Spacing */
+.section {
+  position: relative;
+  padding: 10rem 0;
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 6rem 0;
+  }
+}
+
+/* Section Header Structure */
+.section-meta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-tag {
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+}
+
+.section-title-wrap {
+  margin-top: 0.75rem;
+}
+
+.section-title {
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+}
+
+.section-annotation {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  text-align: right;
+  letter-spacing: 0.1em;
+}
+
+/* Brutalist Buttons & Interactive Elements */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  padding: 1.1rem 2.2rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transition: all var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--text-white);
+  color: var(--bg-black);
+  border: 1px solid var(--text-white);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--text-white);
+  border-color: var(--text-white);
+  box-shadow: 0 0 25px rgba(245, 244, 240, 0.12);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-white);
+  border: 1px solid var(--border-prominent);
+}
+
+.btn-secondary:hover {
+  border-color: var(--text-white);
+  background: rgba(245, 244, 240, 0.05);
+}
+
+.btn-pill {
+  border-radius: 999px;
+}
+
+.btn-sharp {
+  border-radius: 0px;
+}
+
+.btn-arrow {
+  display: inline-block;
+  transition: transform var(--transition-fast);
+}
+
+.btn:hover .btn-arrow {
+  transform: translateX(4px);
+}
+
+/* Badge / Pill */
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.8rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-hairline);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  color: var(--accent-cream);
+  text-transform: uppercase;
+}
+
+.status-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #3ecf8e;
+  box-shadow: 0 0 8px rgba(62, 207, 142, 0.6);
+  animation: pulse-dot 2s infinite ease-in-out;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+/* Fade In On Scroll Observer Helpers */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s var(--ease-expo), transform 0.8s var(--ease-expo);
+}
+
+.reveal-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Utilities */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
