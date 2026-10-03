@@ -71,6 +71,18 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 body {
   font-family: var(--font-body);
   background-color: var(--bg-black);
@@ -208,9 +220,15 @@ img {
   border-bottom: 1px solid var(--border-hairline);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .section {
-    padding: 6rem 0;
+    padding: 7rem 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .section {
+    padding: 4.5rem 0;
   }
 }
 
@@ -222,6 +240,16 @@ img {
   margin-bottom: 4rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--border-hairline);
+}
+
+@media (max-width: 680px) {
+  .section-meta-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.25rem;
+  }
 }
 
 .section-label {
@@ -242,10 +270,11 @@ img {
 }
 
 .section-title {
-  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  font-size: clamp(1.85rem, 5.5vw, 4.2rem);
   text-transform: uppercase;
   letter-spacing: -0.03em;
-  line-height: 0.95;
+  line-height: 0.96;
+  word-break: break-word;
 }
 
 .section-annotation {
@@ -254,6 +283,13 @@ img {
   color: var(--text-dim);
   text-align: right;
   letter-spacing: 0.1em;
+}
+
+@media (max-width: 680px) {
+  .section-annotation {
+    text-align: left;
+    font-size: 0.7rem;
+  }
 }
 
 /* Brutalist Buttons & Interactive Elements */

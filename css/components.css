@@ -153,16 +153,24 @@
   display: none;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 6px;
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   cursor: pointer;
+  padding: 8px;
+  border-radius: 2px;
+  transition: background-color var(--transition-fast);
+}
+
+.mobile-menu-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .mobile-menu-btn span {
   display: block;
   width: 24px;
-  height: 1px;
+  height: 1.5px;
   background: var(--text-white);
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -190,26 +198,42 @@
 
 .mobile-drawer-close {
   position: absolute;
-  top: 1.75rem;
+  top: 1.5rem;
   right: var(--gutter-mobile);
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   letter-spacing: 0.15em;
   color: var(--text-muted);
+  padding: 0.6rem 1rem;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid var(--border-hairline);
+  background: rgba(255, 255, 255, 0.03);
+  transition: all var(--transition-fast);
+}
+
+.mobile-drawer-close:hover {
+  color: var(--text-white);
+  border-color: var(--border-medium);
 }
 
 .mobile-nav-links {
   display: flex;
   flex-direction: column;
-  gap: 1.75rem;
+  gap: 1.5rem;
 }
 
 .mobile-nav-links .nav-link {
   font-family: var(--font-display);
-  font-size: 2.2rem;
+  font-size: clamp(1.75rem, 6vw, 2.4rem);
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--text-white);
+  display: block;
+  padding: 0.2rem 0;
 }
 
 .mobile-drawer-meta {
@@ -295,13 +319,14 @@
 }
 
 .hero-headline {
-  font-size: clamp(3.8rem, 11vw, 9.8rem);
+  font-size: clamp(2.4rem, 10vw, 9.8rem);
   font-weight: 800;
-  line-height: 0.88;
-  letter-spacing: -0.04em;
+  line-height: 0.9;
+  letter-spacing: -0.035em;
   text-transform: uppercase;
   color: var(--text-white);
   text-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+  word-break: break-word;
 }
 
 .hero-subheading {
@@ -1529,68 +1554,7 @@
   text-align: center;
 }
 
-/* --------------------------------------------------------------------------
-   11. RESPONSIVE QUERIES
-   -------------------------------------------------------------------------- */
-@media (max-width: 1200px) {
-  .collection-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .archive-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .featured-exhibition-card {
-    grid-template-columns: 1fr;
-  }
-  .featured-info-col {
-    padding: 2.5rem;
-  }
-}
 
-@media (max-width: 900px) {
-  .intro-grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-  .about-editorial-wrap {
-    grid-template-columns: 1fr;
-  }
-  .inquiry-grid {
-    grid-template-columns: 1fr;
-  }
-  .desktop-nav {
-    display: none;
-  }
-  .mobile-menu-btn {
-    display: flex;
-  }
-  .case-study-modal-container {
-    padding: 2rem 1.5rem;
-  }
-  .noir-modal {
-    padding: 3rem 1rem;
-  }
-}
-
-@media (max-width: 680px) {
-  .collection-grid {
-    grid-template-columns: 1fr;
-  }
-  .archive-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .about-specs-row {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  .featured-spec-list {
-    grid-template-columns: 1fr;
-  }
-  .stories-intro-card {
-    grid-template-columns: 1fr;
-    padding: 2rem 1.5rem;
-  }
-}
 
 /* --------------------------------------------------------------------------
    12. ATELIER SOUNDTRACK MASTERPIECE PLAYER WIDGET
@@ -1788,11 +1752,488 @@
   cursor: pointer;
 }
 
+/* ==========================================================================
+   13. MASTER COMPREHENSIVE RESPONSIVE DESIGN SYSTEM
+   Pixel-perfect tuning across 4K, Desktop, Tablets (Landscape/Portrait),
+   Mobile Phones (320px - 680px), and Touch Devices
+   ========================================================================== */
+
+/* --- LARGE SCREENS & LAPTOPS (<= 1280px) --- */
+@media (max-width: 1280px) {
+  .collection-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .archive-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .featured-exhibition-card {
+    grid-template-columns: 1.15fr 1fr;
+    gap: 3rem;
+  }
+  .featured-info-col {
+    padding: 2.5rem 2.5rem 2.5rem 0;
+  }
+  .about-editorial-wrap {
+    gap: 4rem;
+  }
+}
+
+/* --- TABLETS LANDSCAPE & MID LAPTOPS (<= 1024px) --- */
+@media (max-width: 1024px) {
+  .site-header {
+    height: 72px;
+  }
+  .desktop-nav {
+    gap: 1.75rem;
+  }
+  .nav-link {
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+  }
+  .featured-exhibition-card {
+    grid-template-columns: 1fr;
+  }
+  .featured-visual-stage {
+    min-height: 480px;
+    max-height: 580px;
+    aspect-ratio: 4 / 5;
+  }
+  .featured-info-col {
+    padding: 2.5rem;
+  }
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .about-editorial-wrap {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+  .stories-intro-card {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 3rem;
+  }
+  .story-steps-index {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid var(--border-hairline);
+    padding-top: 2rem;
+  }
+  .inquiry-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+  .case-study-modal-container {
+    padding: 3rem 2rem;
+  }
+  .chapter-content-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+  .archive-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+/* --- TABLETS PORTRAIT & FOLDABLES (<= 900px) --- */
+@media (max-width: 900px) {
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: flex;
+  }
+  .lookbook-strip-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .about-specs-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .archive-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .noir-modal {
+    padding: 3rem 1.5rem;
+  }
+}
+
+/* --- SMARTPHONES & MOBILE VIEWPORTS (<= 680px) --- */
 @media (max-width: 680px) {
-  .atelier-player-widget {
+  /* Navigation */
+  .site-header {
+    height: 62px;
+  }
+  .brand-name {
+    font-size: 0.95rem;
+    letter-spacing: 0.1em;
+  }
+  .brand-sub {
+    font-size: 0.52rem;
+    letter-spacing: 0.16em;
+  }
+  .sound-toggle-btn .sound-label {
+    display: none;
+  }
+  .sound-toggle-btn {
+    padding: 0.4rem 0.65rem;
+    gap: 0;
+    min-height: 36px;
+  }
+  .nav-controls {
+    gap: 0.75rem;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 6.5rem 0 3.5rem;
+    min-height: 90vh;
+  }
+  .hero-top-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    margin-bottom: 1.75rem;
+    padding-bottom: 1rem;
+  }
+  .hero-headline {
+    font-size: clamp(2.35rem, 10.5vw, 4.5rem);
+    line-height: 0.92;
+  }
+  .hero-subheading {
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 1.1rem 1.5rem;
+  }
+  .hero-scroll-indicator {
+    display: none;
+  }
+
+  /* Intro Section */
+  .intro-quote {
+    font-size: clamp(1.65rem, 5.5vw, 2.8rem);
+    line-height: 1.15;
+  }
+  .intro-quote-wrap {
+    margin-bottom: 3.5rem;
+  }
+  .intro-grid {
+    gap: 2.5rem;
+    padding-top: 2.5rem;
+  }
+  .intro-description {
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  /* Collection Toolbar & Exhibition Stage */
+  .collection-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .view-toggle-group {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 3px;
+  }
+  .view-toggle-btn {
+    flex: 1;
+    text-align: center;
+    padding: 0.55rem 0.5rem;
+    font-size: 0.62rem;
+    white-space: nowrap;
+  }
+  .collection-count-badge {
+    text-align: right;
+    font-size: 0.68rem;
+  }
+  .featured-visual-stage {
+    min-height: 320px;
+    max-height: 440px;
+    aspect-ratio: 4 / 5;
+  }
+  .visual-mode-badge {
+    top: 1rem;
     left: 1rem;
+    font-size: 0.6rem;
+    padding: 0.3rem 0.6rem;
+  }
+  .visual-inspect-btn {
     bottom: 1rem;
-    width: calc(100vw - 2rem);
+    right: 1rem;
+    font-size: 0.62rem;
+    padding: 0.45rem 0.85rem;
+  }
+  .featured-info-col {
+    padding: 1.75rem 1.25rem 2rem;
+  }
+  .featured-title {
+    font-size: clamp(1.8rem, 6.5vw, 2.8rem);
+  }
+  .featured-concept-quote {
+    font-size: 1.15rem;
+    margin: 1.25rem 0;
+    padding-left: 1rem;
+  }
+  .featured-spec-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-top: 1.25rem;
+  }
+  .featured-actions-row {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    margin-top: 1.75rem;
+  }
+  .featured-actions-row .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .collection-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .card-info {
+    padding: 1.25rem 1.25rem 1.5rem;
+  }
+
+  /* Lookbook Carousel Reel */
+  .lookbook-slide {
+    width: clamp(260px, 82vw, 360px);
+  }
+  .slide-content-bar {
+    padding: 1rem 1.25rem;
+  }
+  .slide-headline {
+    font-size: 1.05rem;
+  }
+
+  /* Stories Section */
+  .stories-intro-card {
+    padding: 2rem 1.25rem;
+  }
+  .story-step-row {
+    padding: 0.75rem 0.5rem;
+    gap: 0.85rem;
+  }
+  .step-name {
+    font-size: 1.05rem;
+  }
+
+  /* About Atelier */
+  .about-media-box {
+    padding: 0.85rem;
+  }
+  .about-headline {
+    font-size: clamp(2.2rem, 7vw, 3.5rem);
+  }
+  .about-manifesto-text {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  .about-extended-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+  .about-specs-row {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding-top: 1.5rem;
+  }
+
+  /* Archive Section */
+  .archive-filters-bar {
+    width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.65rem;
+    margin-bottom: 2rem;
+  }
+  .archive-filter-btn {
+    flex-shrink: 0;
+    padding: 0.55rem 0.95rem;
+    font-size: 0.65rem;
+  }
+  .archive-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .archive-item-meta {
+    padding: 0.85rem 0.75rem;
+  }
+  .archive-item-title {
+    font-size: 0.88rem;
+  }
+  .archive-item-medium {
+    font-size: 0.62rem;
+  }
+
+  /* Inquiry Form & Contact */
+  .inquiry-form-card {
+    padding: 2rem 1.25rem;
+  }
+  .inquiry-lead {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .form-input, .form-textarea {
+    font-size: 16px;
+    padding: 0.85rem 1rem;
+  }
+
+  /* Site Footer */
+  .site-footer {
+    padding: 3.5rem 0 2rem;
+  }
+  .footer-top {
+    flex-direction: column;
+    gap: 2.25rem;
+    margin-bottom: 2.5rem;
+  }
+  .footer-time-clocks {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  /* Full-Screen Case Study Modal */
+  .noir-modal {
+    padding: 0;
+  }
+  .case-study-modal-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 4.5rem 1.25rem 3rem;
+    border: none;
+    border-radius: 0;
+  }
+  .modal-close-btn {
+    top: 1rem;
+    right: 1rem;
+    padding: 0.45rem 0.85rem;
+    font-size: 0.65rem;
+  }
+  .case-study-nav-tabs {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    gap: 0.25rem;
+    margin-bottom: 2rem;
+  }
+  .case-study-tab-btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.68rem;
+  }
+
+  /* Lightbox Modal */
+  .lightbox-modal {
+    padding: 1rem;
+  }
+  .lightbox-content-box img {
+    max-height: 60vh;
+    max-width: 95vw;
+  }
+  .lightbox-caption {
+    margin-top: 1rem;
+    font-size: 0.7rem;
+  }
+
+  /* Atelier Floating Player Widget */
+  .atelier-player-widget {
+    position: fixed;
+    left: 0.75rem;
+    right: 0.75rem;
+    bottom: 0.75rem;
+    width: auto;
+    max-width: calc(100vw - 1.5rem);
+    z-index: 1000;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.8);
+  }
+  .player-header {
+    padding: 0.65rem 1rem;
+  }
+  .player-body {
+    padding: 1rem 1rem 0.65rem;
+  }
+  .player-progress-wrap {
+    padding: 0 1rem 0.4rem;
+  }
+  .player-controls-row {
+    padding: 0.65rem 1rem 0.85rem;
+  }
+  .atelier-player-widget.is-collapsed {
+    width: auto;
+    max-width: calc(100vw - 1.5rem);
+    right: auto;
+    left: 0.75rem;
+  }
+}
+
+/* --- ULTRA-COMPACT SMARTPHONES (<= 400px) --- */
+@media (max-width: 400px) {
+  .brand-name {
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+  }
+  .brand-sub {
+    display: none;
+  }
+  .archive-grid {
+    grid-template-columns: 1fr;
+  }
+  .player-vol-slider {
+    width: 50px;
+  }
+  .player-track-title {
+    font-size: 0.85rem;
+  }
+  .featured-visual-stage {
+    min-height: 280px;
+  }
+}
+
+/* --- TOUCH SCREEN & COARSE POINTER ACCESSIBILITY --- */
+@media (hover: none) and (pointer: coarse) {
+  .card-hover-overlay {
+    opacity: 0.9;
+    background: linear-gradient(0deg, rgba(7, 7, 8, 0.8) 0%, transparent 60%);
+    align-items: flex-end;
+    padding-bottom: 1.5rem;
+  }
+  .card-hover-overlay .btn {
+    transform: none;
+  }
+  .btn, .nav-link, .view-toggle-btn, .archive-filter-btn, .modal-close-btn, .player-btn-circle {
+    touch-action: manipulation;
   }
 }
 

@@ -27,11 +27,11 @@ const archiveItems = [
   {
     id: "arc-03",
     category: "campaign",
-    title: "SECTOR 7 BRUTALIST PAVILION LOOK 01",
+    title: "I'M FALLING AGAIN // DEFAULT MUSE EDITORIAL",
     medium: "35mm Kodak Tri-X 400 pushed to 1600",
     date: "DECEMBER 2023",
     src: "assets/images/falling_model.jpg",
-    details: "Male model wearing 'I'M FALLING AGAIN' boxy heavyweight tee and distressed cargo trousers in stark overcast ambient light.",
+    details: "Brand's default female muse wearing 'I'M FALLING AGAIN' screenprint on custom ribbed streetwear silhouette against brutalist concrete.",
     location: "Southbank Concrete Complex"
   },
   {
@@ -57,11 +57,11 @@ const archiveItems = [
   {
     id: "arc-06",
     category: "campaign",
-    title: "DEFAULT BRAND MUSE // 'YOU CAN'T REACH ME'",
+    title: "ANXIOUS PARADISE // DEFAULT MUSE LOOK",
     medium: "35mm architectural portrait — Concrete Pavilion",
     date: "SS24 CAMPAIGN",
     src: "assets/images/campaign_model_2.jpg",
-    details: "Official default brand model for the Noir Culture Society female category. Curvy silhouette captured against monumental brutalist concrete.",
+    details: "Official default brand model for the Noir Culture Society female category wearing 'ANXIOUS PARADISE' burning palm screenprint against monumental brutalist concrete.",
     location: "Concrete Monolith Pavilion"
   },
   {
@@ -87,11 +87,11 @@ const archiveItems = [
   {
     id: "arc-09",
     category: "campaign",
-    title: "MUSE PORTRAIT // ARCHITECTURAL DRAPE",
-    medium: "35mm medium close-up editorial portrait",
+    title: "ECHOES IN CONCRETE // DEFAULT MUSE LOOK",
+    medium: "35mm architectural portrait — Concrete Pavilion",
     date: "SS24 CAMPAIGN",
     src: "assets/images/campaign_model_3.jpg",
-    details: "Signature female muse portrait study highlighting the drape, neckline, and rebellious attitude of the atelier collection.",
+    details: "Signature female muse wearing 'ECHOES IN THE CONCRETE // 3:45 AM METROPOLIS' wireframe brutalist graphic in raw architectural daylight.",
     location: "Brutalist Archive Pavilion"
   },
   {
@@ -101,8 +101,38 @@ const archiveItems = [
     medium: "Cinematic medium format 35mm film emulation",
     date: "APRIL 2024",
     src: "assets/images/hero_campaign.jpg",
-    details: "The definitive hero lookbook capture framing the brand's aesthetic: stark architecture, heavyweight drape, melancholic attitude.",
+    details: "The definitive hero lookbook capture framing the brand's default female muse wearing the flagship 'I'M FALLING AGAIN' streetwear design against stark architecture.",
     location: "Monolith Concrete Pavilion"
+  },
+  {
+    id: "arc-11",
+    category: "graphics",
+    title: "AM I SCARY? // T-SHIRT GRAPHIC SHOWCASE",
+    medium: "Waterbased discharge & bone white screenprint on heavy black cotton",
+    date: "MAY 2024",
+    src: "assets/images/scary_art.jpg",
+    details: "Dark humor meets existential vulnerability. The weeping baby Grim Reaper holding its face under a crescent moon, typeset in hand-distressed bone gothic script.",
+    location: "London Studio"
+  },
+  {
+    id: "arc-12",
+    category: "campaign",
+    title: "ATELIER DUO // 'AM I SCARY?' CAMPAIGN",
+    medium: "35mm studio editorial — Industrial pipe architecture",
+    date: "SS24 CAMPAIGN",
+    src: "assets/images/campaign_duo.jpg",
+    details: "Two-model campaign editorial showcasing the unisex oversized streetwear cut. Styled with layered silver curb chains and wide-leg utility cargo trousers.",
+    location: "Atelier Studio Stage"
+  },
+  {
+    id: "arc-13",
+    category: "campaign",
+    title: "AM I SCARY? // CONCRETE ARCHIVE LOOK",
+    medium: "35mm Kodak Tri-X — Concrete Monolith",
+    date: "SS24 CAMPAIGN",
+    src: "assets/images/scary_model.jpg",
+    details: "Brand's signature female muse wearing 'AM I SCARY?' graphic t-shirt in raw ambient outdoor light against brutalist concrete walls.",
+    location: "Concrete Monolith Pavilion"
   }
 ];
 

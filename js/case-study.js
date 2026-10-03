@@ -137,7 +137,7 @@ const caseStudyData = {
         title: "CAMPAIGN CHRONICLES",
         lead: "Surreal twilight lookbook captured under industrial sodium lights.",
         image: "assets/images/campaign_model_2.jpg",
-        caption: "Campaign Look 02 — Concrete wet reflections under diffused moody light.",
+        caption: "Campaign Look 02 — Default brand muse wearing ANXIOUS PARADISE against brutalist architecture.",
         quote: "“A wearable testament to finding peace within the noise.”"
       }
     }
@@ -202,8 +202,76 @@ const caseStudyData = {
         title: "CAMPAIGN CHRONICLES",
         lead: "Editorial lookbook photograph framed within industrial concrete shafts of light.",
         image: "assets/images/campaign_model_3.jpg",
-        caption: "Campaign Look 03 — Rebel Youth & Romantic Nihilism in industrial monolith.",
+        caption: "Campaign Look 03 — Default brand muse wearing ROMANTIC NIHILISM in architectural daylight.",
         quote: "“A uniform for the romantic who refuses to look away from reality.”"
+      }
+    }
+  },
+  scary: {
+    id: "scary",
+    title: "AM I SCARY?",
+    tagline: "Dark humor, childhood vulnerability, and existential innocence.",
+    edition: "EDITION 04 / SS24",
+    gsm: "290 GSM RING-SPUN COMBED COTTON",
+    colorway: "DEEP RAVEN BLACK / BONE WHITE & PASTEL MINT",
+    chapters: {
+      concept: {
+        num: "01",
+        title: "CONCEPT & METAPHOR",
+        lead: "A weeping Grim Reaper asking the world if it is feared, or merely misunderstood.",
+        body: [
+          "'AM I SCARY?' investigates the tragicomedy of dark stereotypes through a weeping baby Grim Reaper holding its face under a crescent moon.",
+          "It captures that raw, tender contradiction between who we think we are supposed to be and the small, trembling creature inside. Dark humor as a defense mechanism against alienation.",
+          "A signature piece bridging contemporary high-fashion street silhouettes with subversive, melancholic storytelling."
+        ],
+        quote: "“The terror we project is often just the grief we haven't learned to mourn.”",
+        tags: ["Dark Humor", "Melancholy", "Subversive Streetwear", "Existential Innocence"]
+      },
+      visual: {
+        num: "02",
+        title: "VISUAL DIRECTION",
+        lead: "Hand-drawn gothic woodblock typography paired with storybook illustration.",
+        body: [
+          "The headline typography is typeset in customized distressed bone-lettering ('AM I SCARY?'), arched protectively over the hooded figure.",
+          "The illustration relies on rich charcoal black fills, soft-hand waterbased bone-white discharge ink, and subtle muted moon-yellow highlights.",
+          "The garment execution utilizes an oversized boxy drop-shoulder cut with elongated ribbing, designed for effortless unisex draping."
+        ],
+        palette: [
+          { name: "Deep Raven", hex: "#0a0a0c" },
+          { name: "Bone White", hex: "#e8e5db" },
+          { name: "Moon Yellow", hex: "#d8d39c" },
+          { name: "Haze Smoke", hex: "#5a686b" }
+        ]
+      },
+      artwork: {
+        num: "03",
+        title: "HIGH-RESOLUTION ARTWORK",
+        lead: "Master t-shirt screenprint graphic showcasing the crying Grim Reaper.",
+        image: "assets/images/scary_art.jpg",
+        caption: "Master Screenprint Illustration — 'AM I SCARY?' with weeping hooded skeleton and celestial backdrop."
+      },
+      onbody: {
+        num: "04",
+        title: "ON-BODY ARCHITECTURE",
+        lead: "Substantial 290 GSM combed cotton draped effortlessly on the brand's default muse.",
+        body: [
+          "Captured on the brand's signature female muse against the brutalist concrete monolith, highlighting how the playful yet dark graphic contrasts with raw architectural surroundings.",
+          "Reinforced crew neck with Lycra ribbing to maintain shape through repeated washings."
+        ],
+        specs: [
+          { label: "Fabric Blank", val: "290 GSM Combed Ring-Spun Cotton" },
+          { label: "Cut", val: "Relaxed Streetwear Silhouette" },
+          { label: "Print Finish", val: "Soft-Hand Discharge Screenprint" },
+          { label: "Wash", val: "Carbon Wash Anti-Shrink" }
+        ]
+      },
+      campaign: {
+        num: "05",
+        title: "CAMPAIGN CHRONICLES",
+        lead: "Editorial duo campaign photograph framing the oversized streetwear pairing.",
+        image: "assets/images/campaign_duo.jpg",
+        caption: "Atelier Duo Campaign Look — Two models styled in the oversized 'AM I SCARY?' streetwear silhouette.",
+        quote: "“A shared uniform of dark empathy and quiet rebellion.”"
       }
     }
   }

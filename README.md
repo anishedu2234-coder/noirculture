@@ -114,9 +114,11 @@ Selecting any piece initiates the immersive full-screen **Case Study Reader**, b
 
 The website features a custom built-in **Atelier Masterpiece Player** engineered to soundtrack the visual experience with haunting, evocative tones:
 
-- **Track 01: Erik Satie — *Gymnopédie No. 1 (Lent et douloureux)***
+- **Track 01: Sergei Rachmaninoff — *Vocalise, Op. 34 No. 14 (Arr. Violin & Piano)***
+  - Dark, tragic Russian romanticism transcribed for violin and piano. Performed by Roxana Pavel Goldstein (violin) and Monica Goldstein (piano). Sorrowful, weeping string melodies over brooding minor-key piano harmonies.
+- **Track 02: Erik Satie — *Gymnopédie No. 1 (Lent et douloureux)***
   - The timeless 1888 French minimalist masterpiece. Fragile, melancholic piano notes echoing the quiet weight of the artwork. High-fidelity archival studio recording.
-- **Track 02: *Noir Runway // Sub-Bass Drone & Analog Tape Flutter***
+- **Track 03: *Noir Runway // Sub-Bass Drone & Analog Tape Flutter***
   - Generative procedural Web Audio API synthesizer. Pure D-minor warm analog oscillation with low-pass resonant filtering and vinyl dust crackle.
 - **Interactive Controls:** Floating minimal card with real-time waveform equalizer, timeline scrubbing, volume attenuation, track toggling, and minimize drawer.
 
@@ -143,18 +145,24 @@ A private vault documenting the raw, tactile process behind the garments:
 noirculture/
 ├── assets/
 │   ├── audio/
+│   │   ├── masterpiece_vocalise.ogg # Rachmaninoff Vocalise (Violin & Piano, Goldstein Duo)
 │   │   └── masterpiece_satie.mp3    # Gymnopédie No. 1 Master Recording (7.5 MB)
 │   └── images/
 │       ├── output-image.jpeg        # Original master muse photograph
-│       ├── default_female_model_noir.jpg # Color-graded signature muse portrait
-│       ├── hero_campaign.jpg        # Hero full-bleed campaign photography
-│       ├── falling_art.jpg          # 'I'm Falling Again' master artwork
-│       ├── falling_model.jpg        # Brutalist pavilion lookbook
+│       ├── scary_art.jpg            # 'AM I SCARY?' master graphic showcase
+│       ├── campaign_duo.jpg         # Streetwear Duo Campaign (Two-Person Editorial)
+│       ├── scary_model.jpg          # Muse wearing 'AM I SCARY?' in concrete pavilion
+│       ├── default_model_wearing_falling_again.jpg # Muse wearing 'I'm Falling Again'
+│       ├── default_model_wearing_anxious.jpg       # Muse wearing 'Anxious Paradise'
+│       ├── default_model_wearing_romantic.jpg      # Muse wearing 'Romantic Nihilism'
+│       ├── hero_campaign.jpg        # Hero full-bleed campaign: Muse wearing flagship tee
+│       ├── falling_art.jpg          # 'I'm Falling Again' master garment
+│       ├── falling_model.jpg        # Muse wearing 'I'm Falling Again' in concrete pavilion
 │       ├── anxious_art.jpg          # 'Anxious Paradise' vintage wash flat lay
-│       ├── romantic_art.jpg         # 'Romantic Nihilism' marble & rose
+│       ├── romantic_art.jpg         # 'Romantic Nihilism' marble & rose flat lay
 │       ├── echoes_art.jpg           # 'Echoes in the Concrete' 3:45 AM
-│       ├── campaign_model_2.jpg     # Official default muse in concrete pavilion
-│       ├── campaign_model_3.jpg     # Official muse close-up portrait
+│       ├── campaign_model_2.jpg     # Muse wearing 'Anxious Paradise' on-body
+│       ├── campaign_model_3.jpg     # Muse wearing 'Echoes in the Concrete' on-body
 │       ├── archive_sketch.jpg       # Raw ink and calligraphy sketchbook
 │       └── studio_archive.jpg       # Art director workbench & Pantone chips
 ├── css/
